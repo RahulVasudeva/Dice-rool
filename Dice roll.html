@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function generator() { 
+            document.getElementById("prt").innerHTML="";
+        var random_=parseInt(Math.random()*100);
+        //alert(random_);
+        if(random_<=40){
+            document.getElementById("prt").innerHTML+="Rolled "+1 +": read one manga chapter";
+            
+        }
+        else if(random_>40 && random_<=60) {
+            document.getElementById("prt").innerHTML+="Rolled "+2 +": M";
+        }
+        else if(random_>60 && random_<=75) {
+            document.getElementById("prt").innerHTML+="Rolled "+3 +": 10 points added";
+        }
+        else if(random_>75 && random_<=85) {
+            document.getElementById("prt").innerHTML+="Rolled "+4+": Play a game on DS for 15 mins";
+        }
+        else if(random_>85 && random_<=95) {
+            document.getElementById("prt").innerHTML+="Rolled "+5+": Watch one anime EP";
+        }
+        else if(random_>95 && random_<=100) {
+            document.getElementById("prt").innerHTML+="Rolled "+6+": Watch a show ep";
+        }
+    }
+        
+    </script>
+</head>
+<center><body>  
+    <h3 id="prt"></h3>
+    <button onclick="generator()">press to roll</button>
+</body></center>
+</html>
